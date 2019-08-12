@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>GWDonation</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+
+
+<div id="mainview" class="container-fluid">
+  <div class="row py-2">
+    <div class="col text-center">
+      <button type="button" title="Clothes" class="btn btn-outline-primary btn-lg customBtn" onclick="goToButtonView(0)">
+        <i class="fas fa-tshirt"></i></a>
+      </button>
+    </div>
+    <div class="col text-center">
+      <button type="button" title="Purses/Shoes" class="btn btn-outline-primary btn-lg customBtn" onclick="goToButtonView(1)">
+       <i class="fas fa-shopping-bag"></i>
+      </button>
+    </div>
+    <div class="col text-center">
+      <button type="button" title="Linens" class="btn btn-outline-primary btn-lg customBtn" onclick="goToButtonView(2)">
+      <i class="fas fa-bed"></i>
+      </button>
+    </div>
+  </div>
+  <div class="row py-2">
+    <div class="col text-center">
+      <button type="button" title="Accessories!" class="btn btn-outline-primary btn-lg customBtn" onclick="goToButtonView(3)">
+       <i class="fas fa-glasses"></i>
+      </button>
+    </div>
+    <div class="col text-center">
+      <button type="button" title="Appliances" class="btn btn-outline-primary btn-lg customBtn" onclick="goToButtonView(4)">
+      <i class="fas fa-blender"></i>
+      </button>
+    </div>
+    <div class="col text-center">
+      <button type="button" title="Books/Media" class="btn btn-outline-primary btn-lg customBtn" onclick="goToButtonView(5)">
+      <i class="fas fa-book"></i>
+      </button>
+    </div>
+  </div>
+  <div class="row py-2">
+    <div class="col text-center">
+      <button type="button" title="Toys/Games" class="btn btn-outline-primary btn-lg customBtn" onclick="goToButtonView(6)">
+      <i class="fas fa-gamepad"></i>
+      </button>
+    </div>
+    <div class="col text-center">
+      <button type="button" title="Electronics/Computers" class="btn btn-outline-primary btn-lg customBtn" onclick="goToButtonView(7)">
+     <i class="fas fa-plug"></i>
+      </button>
+    </div>
+    <div class="col text-center">
+      <button type="button" title="Furniture" class="btn btn-outline-primary btn-lg customBtn" onclick="goToButtonView(8)">
+      <i class="fas fa-chair"></i>
+      </button>
+    </div>
+  </div>
+  <div class="row py-2">
+    <div class="col text-center">
+      <button type="button" title="Athletic Equipment" class="btn btn-outline-primary btn-lg customBtn" onclick="goToButtonView(9)">
+      <i class="fas fa-football-ball"></i>
+      </button>
+    </div>
+    <div class="col text-center">
+      <button type="button" title="Other" class="btn btn-outline-primary btn-lg customBtn" onclick="goToButtonView(10)">
+      <i class="fas fa-question-circle"></i></i>
+      </button>
+    </div>
+    <div class="col text-center">
+      <button type="button" title="Monetary Donation" class="btn btn-outline-primary btn-lg customBtn" onclick="goToButtonView(11)">
+      <i class="fas fa-money-bill-wave"></i>
+      </button>
+    </div>
+  </div>
+  <div class="row py-2">
+    <div class="col">
+      <button type="button" title="Calculate" class="btn btn-primary btn-large w-100 customBtn" onclick="showResults()"><i class="fas fa-calculator"></i></button>
+    </div>
+  </div>
+</div>
+<div id="btnview" class="container-fluid" style="visibility:hidden;display:none;">
+  <label>Amount of Items:</label>
+  <br/>
+  <input type="number" class="form-control" id="buttonInput" min=0 value=0>
+  <br/>
+  <button type="button" title="Update"  class="btn btn-outline-primary"  onclick="updateCurrentValue()">Update</button>
+  <br/>
+  <button type="button" title="Click me!"  class="btn btn-outline-primary"  onclick="returnToMainView()">Go Back</button>
+</div>
+<div id="resultsview" class="container-fluid" style="visibility:hidden;display:none;">
+  <label>Whatever you want to put here:</label>
+  <br/>
+  <span id="resultText"></span>
+  <br/>
+  <button type="button" title="Click me!" class="btn btn-outline-primary"  onclick="returnToMainView()">Go Back</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/ebdf8ad8f3.js"></script>
+<script src="main.js" type="text/javascript"></script>
+
+</body>
+
+</html>
